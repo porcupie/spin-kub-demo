@@ -1,9 +1,9 @@
 FROM golang
 
-ADD . /go/src/github.com/lwander/k8s-demo
+ADD . /go/src/github.com/porcupie/spin-kub-demo
 
-RUN go install github.com/lwander/k8s-demo
+RUN go install github.com/porcupie/spin-kub-demo
 
 ADD ./content /content
 
-ENTRYPOINT /go/bin/k8s-demo
+ENTRYPOINT /go/bin/spin-kub-demo
